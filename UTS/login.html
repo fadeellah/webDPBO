@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	<script src="https://kit.fontawesome.com/a076d05399.js"></script>
+   	<link rel="stylesheet" type="text/css" href="home-mobile.css" media="only screen and (max-width: 768px)"/>
+    <link rel="stylesheet" href="login.css">
+	<title>Login</title>
+</head>
+	
+<body>
+
+	<div class="navbar">
+		<a href="Travel.html" class="logo">TRAVELUKA</a>
+	</div>
+	
+	<div class="hero">
+		<div class="form-box">
+			<div class="button-box">
+				<div id="btn"></div>
+				<button type="button" class="toggle-btn" onclick="login()">Login</button>
+				<button type="button" class="toggle-btn" onclick="register()">Register</button>
+			</div>
+			<div class="social">
+				<a href="#"><span class="fab fa-facebook-f"></span></a>
+				<a href="#"><span class="fab fa-youtube"></span></a>
+				<a href="#"><span class="fab fa-instagram"></span></a>
+				<a href="#"><span class="fab fa-twitter"></span></a>
+			</div>	
+			<form id="login" class="input-group" action="Travel.html">
+				<input type="text" class="input-field" placeholder="User Id" required>
+				<input type="password" class="input-field" placeholder="Enter Password" required>
+				<input type="checkbox" class="chech-box"><span>Remember Password</span>
+				<button type="submit" class="submit-btn">Log In</button>
+			</form>
+			<form id="register" class="input-group" action="#login">
+				<input type="text" class="input-field" placeholder="User Id" required>
+				<input type="email" class="input-field" placeholder="Email Id" required>
+				<input type="password" class="input-field" placeholder="Enter Password" required>
+				<input type="checkbox" class="chech-box"><span>I agree to the term & condition</span>
+				<button type="submit" class="submit-btn">Register</button>
+			</form>
+		</div>
+	
+	</div>
+
+<script>
+	var x = document.getElementById("login");
+	var y = document.getElementById("register");
+	var z = document.getElementById("btn");
+	
+	function register(){
+		x.style.left = "-400px";
+		y.style.left = "50px";
+		z.style.left = "110px";
+	}
+	
+	function login(){
+		x.style.left = "50px";
+		y.style.left = "450px";
+		z.style.left = "0px";
+	}
+</script>		
+			
+</body>
+</html>
